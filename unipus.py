@@ -5,6 +5,10 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 import re
+import time
+import config
+
+
 
 # 指定chromedriver的路径
 webdriver_service = Service('chromedriver.exe')
@@ -22,11 +26,11 @@ driver.get(r"https://sso.unipus.cn/sso/login?service=https%3A%2F%2Fu.unipus.cn%2
 username = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.NAME, "username")))
 username = driver.find_element(By.NAME, "username")
 # 输入账号
-username.send_keys("13116033570")
+username.send_keys(config.user.username)
 # 搜索name="password"的元素，定位到密码输入框
 password = driver.find_element(By.NAME, "password")
 # 输入密码
-password.send_keys("Yoyo14185721")
+password.send_keys(config.user.password)
 # 勾选所有<input type="checkbox">
 checkbox = driver.find_elements(By.CSS_SELECTOR, "input[type='checkbox']")
 for i in checkbox:
@@ -60,6 +64,17 @@ while True:
     for i in range(len(inputs)):
         inputs[i].send_keys(input2[i])
         pass
+
+    #搜索<button>提交</button>
+    submit = driver.find_element(By.XPATH, "//button[contains(text(),'提交')]")
+    submit.click()
+    time.sleep(1)
+    #搜索确认提交的<button>确认</button>
+    if WebDriverWait(driver, 1).until(EC.element_to_be_clickable((By.XPATH, "//button//div//div//span[contains(text(),'确认')]"))) != None:
+        submit_confirm = driver.find_element(By.XPATH, "//button//div//div//span[contains(text(),'确认')]")
+        submit_confirm.click()
+    
+
     file.close()
     # 用户手动在命令行输入时向下进行
         

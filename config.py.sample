@@ -1,0 +1,8 @@
+
+class User(object):
+    username = ""
+    password = ""
+
+user = User()
+user.username = #用户名，请替换
+user.password = #密码，请替换
