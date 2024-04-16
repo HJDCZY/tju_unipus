@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5b3d11495ea60f541d07ad0b76af1b314e04bae29ef4eb724a299cbf5650abf4
-size 18
+.vscode
+config.py
+chrome-win64
+chromedriver-win64
+.gitattributes
