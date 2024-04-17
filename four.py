@@ -110,4 +110,67 @@ u1_9_1.answer = '''
 12) cognitive
 '''
 
-exercises = [u1_8_1, u1_8_2, u1_9_1]
+u2_3_1 = exercise()
+u2_3_1.url = r'#/course-v1:Unipus+nhce_3_rw_4_sz+20201231/courseware/u2/u2g69/u2g73/u2g74/p_1'
+u2_3_1.answer = '''
+1) domination
+2) orientation
+3) confrontation
+4) composer
+5) binder
+6) scanner
+7) manufacturer
+8) erase
+9) imperialist
+10) leftist
+11) terrorist
+12) humanist
+'''
+
+u2_3_2 = exercise()
+u2_3_2.url = r'#/course-v1:Unipus+nhce_3_rw_4_sz+20201231/courseware/u2/u2g69/u2g73/u2g75/p_1'
+u2_3_2.answer = '''
+1. domination
+2.scanners
+3. humanist
+4. confrontation
+5. leftists
+6. orientation
+7. erased
+8. terrorists
+9. manufacturers
+10. binder
+11. imperialists
+12. composers
+'''
+
+u2_3_3 = exercise()
+u2_3_3.url = r'#/course-v1:Unipus+nhce_3_rw_4_sz+20201231/courseware/u2/u2g69/u2g76/u2g77/p_1'
+u2_3_3.answer = '''
+1) achieving
+2) gorgeous
+3) considered
+4) context
+5) accessories
+6) appreciated
+7) complexion
+8) handsome
+9) comment
+10) admiration
+'''
+
+u2_3_4 = exercise()
+u2_3_4.url = r'#/course-v1:Unipus+nhce_3_rw_4_sz+20201231/courseware/u2/u2g69/u2g78/u2g79/p_1'
+u2_3_4.answer = '''
+1. in hopes of
+2. came up with
+3. excused herself
+4. was obsessed with
+5. reaching out to
+6. voice an opinion on
+7. live up to
+8. in terms of
+'''
+
+u2_8_1 = exercise()
+u2_8_1.url

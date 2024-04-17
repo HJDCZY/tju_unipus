@@ -54,7 +54,7 @@ for i in unipus.exercises:
     #让浏览器打开目标网页
     driver.get(url)
     try:
-        button = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, "//button[.//span[contains(text(),'确定')]]")))
+        button = WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.XPATH, "//button[.//span[contains(text(),'确定')]]")))
         button.click()
     except TimeoutException:
         pass
