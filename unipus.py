@@ -97,7 +97,7 @@ for i in unipus.exercises:
         pass
     
     #搜索<button>提交</button>
-    input("Press Enter to continue...")
+    # input("Press Enter to continue...")
     submit = driver.find_element(By.XPATH, "//button[contains(text(),'提交')]")
     submit.click()
     time.sleep(1)
@@ -110,11 +110,11 @@ for i in unipus.exercises:
         submit_confirm.click()
     except TimeoutException:
         pass
-    
+    time.sleep(1)
     # 用户手动在命令行输入时向下进行
-    input("Press Enter to continue...")
+    # input("Press Enter to continue...")
     
         
 
 
-
+input ("Press Enter to exit...")
