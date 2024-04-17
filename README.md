@@ -4,6 +4,8 @@ tju_unipus是由滑稽盾采紫由（HJDCZY）开发的一个大英u校园自动
 本工具使用chrome和chromedriver开发，在release包中我们包含了chrome和chromedriver，而源代码因github不能上传大于100MB的文件，所以我们没有上传chrome。
 我在release中上传的是chorme-win64,如果你的系统不是win64，请自行下载对应的chrome。
 
+**注意：本工具只能完成填空题，剩下的题请自行完成**
+
 ## 使用方法
 
 1. 安装python3.7及以上版本。
