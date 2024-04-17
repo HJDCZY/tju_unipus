@@ -113,8 +113,4 @@ for i in unipus.exercises:
     time.sleep(1)
     # 用户手动在命令行输入时向下进行
     # input("Press Enter to continue...")
-    
-        
-
-
 input ("按Enter退出...")
