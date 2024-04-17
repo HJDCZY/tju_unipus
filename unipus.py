@@ -40,7 +40,7 @@ for i in checkbox:
 login = driver.find_element(By.ID, "login")
 login.click()
 
-input("Press Enter to continue...")
+input("按Enter继续...")
 currenturl = driver.current_url
 #截取url井号之前的部分（包括井号）
 urlprefix = currenturl.split("#")[0]
@@ -117,4 +117,4 @@ for i in unipus.exercises:
         
 
 
-input ("Press Enter to exit...")
+input ("按Enter退出...")
