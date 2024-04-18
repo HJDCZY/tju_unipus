@@ -3,3 +3,7 @@ config.py
 chrome-win64
 chromedriver-win64
 .gitattributes
+config.ini
+dist
+build
+unipus.spec

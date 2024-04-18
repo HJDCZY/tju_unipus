@@ -1,0 +1,9 @@
+[user]
+#u校园账号，直接写，不用加引号
+username = 
+#u校园密码，直接写，不用加引号
+password = 
+#chrome.exe的位置，不用加引号，推荐写绝对路径
+chormelocation = 
+#chromedriver.exe的位置，不用加引号，推荐写绝对路径
+chormedriverlocation = 

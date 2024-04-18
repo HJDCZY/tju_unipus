@@ -6,17 +6,42 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 import re
 import time
-import config
 import four as unipus
 from selenium.common.exceptions import TimeoutException
+from configparser import ConfigParser
 
+class User(object):
+    username = ""
+    password = ""
+    book = 0
+    chormelocation = ""
+    chormedriverlocation = ""
+
+myuser = User()
+
+# 读取配置文件
+def config():
+    config = ConfigParser()
+    config.read("config.ini")
+    if config.has_section("user"):
+        myuser.username = config.get("user", "username")
+        myuser.password = config.get("user", "password")
+        myuser.chormedriverlocation = config.get("user", "chormedriverlocation")
+        myuser.chormelocation = config.get("user", "chormelocation")
+    else:
+        print("配置文件错误")
+        input("按Enter退出...")
+        exit(1)
+
+config()
+        
 
 # 指定chromedriver的路径
-webdriver_service = Service(config.user.chormedriverlocation)
+webdriver_service = Service(myuser.chormedriverlocation)
 
 # 指定Chrome的路径
 chrome_options = Options()
-chrome_options.binary_location = config.user.chormelocation
+chrome_options.binary_location = myuser.chormelocation
 
 # 创建一个新的Chrome浏览器实例
 driver = webdriver.Chrome(service=webdriver_service, options=chrome_options)
@@ -27,11 +52,11 @@ driver.get(r"https://sso.unipus.cn/sso/login?service=https%3A%2F%2Fu.unipus.cn%2
 username = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.NAME, "username")))
 username = driver.find_element(By.NAME, "username")
 # 输入账号
-username.send_keys(config.user.username)
+username.send_keys(myuser.username)
 # 搜索name="password"的元素，定位到密码输入框
 password = driver.find_element(By.NAME, "password")
 # 输入密码
-password.send_keys(config.user.password)
+password.send_keys(myuser.password)
 # 勾选所有<input type="checkbox">
 checkbox = driver.find_elements(By.CSS_SELECTOR, "input[type='checkbox']")
 for i in checkbox:
