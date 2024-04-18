@@ -61,6 +61,10 @@ user.chormedriverlocation = r"D:\code\unipus\tju_unipus\chromedriver-win64\chrom
 
 7. 完成后，按enter退出
 
+注意：如果你出现这样的报错
+![image](https://github.com/HJDCZY/tju_unipus/assets/112754310/169de659-39a4-45b2-b723-2e7a1cee0f80)
+说明你的`config.ini`的chorme和choremdriver地址写的有问题，需要修改
+
 </details>
 
 ## 注意事项
