@@ -61,6 +61,8 @@ user.chormedriverlocation = r"D:\code\unipus\tju_unipus\chromedriver-win64\chrom
 
 7. 完成后，按enter退出
 
+</details>
+
 ## 注意事项
 
 在程序进行的时候，有时候可能会出现进入新页面不动的情况，那是因为程序在等待
