@@ -38,7 +38,7 @@ user.chormedriverlocation = r"D:\code\unipus\tju_unipus\chromedriver-win64\chrom
 </details>
 
 <details>
-<summary>如果您使用的是v0.0.2版本</summary>
+<summary>如果您使用的是v0.0.2版本(仅适用于windows)</summary>
 
 1. 在release页面下载v0.0.2版本的`tju_unipus.zip`并解压。
 
@@ -55,7 +55,7 @@ user.chormedriverlocation = r"D:\code\unipus\tju_unipus\chromedriver-win64\chrom
 
 4. 运行后，程序会自动打开chrome并自动登录u校园，请手动跳过u校园环境检测，点进任意一个练习的界面并停留。
 
-5. 完成第5步后，在弹出的cmd界面（黑色窗口）按一下回车（里面也会提示你）
+5. 完成第4步后，在弹出的cmd界面（黑色窗口）按一下回车（里面也会提示你）
 
 6. 静待你的u校园自动完成
 
